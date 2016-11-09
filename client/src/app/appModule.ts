@@ -1,9 +1,12 @@
 import {NgModule} from '@angular/core';
 import {BrowserModule} from '@angular/platform-browser';
 import {HttpModule} from '@angular/http';
-import {AppComponent} from './app/components/app/app';
-import {PokemonService} from './app/services/pokemonService';
-import {ListComponent} from './app/components/list/list';
+import {AppComponent} from './components/app/app';
+import {PokemonService} from './services/pokemonService';
+import {ListComponent} from './components/list/list';
+import {AppRoutes, appRoutingProviders} from './routes';
+import {NavigationComponent} from './components/navigation/navigation';
+import {DetailComponent} from './components/detail/detail';
 
 @NgModule({
     imports: [
@@ -13,7 +16,9 @@ import {ListComponent} from './app/components/list/list';
     ],
     declarations: [
         AppComponent,
-        ListComponent
+        ListComponent,
+        NavigationComponent,
+        DetailComponent
     ],
     bootstrap: [AppComponent],
     providers: [

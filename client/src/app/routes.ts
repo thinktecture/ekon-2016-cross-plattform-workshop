@@ -1,11 +1,16 @@
 import {Routes, RouterModule} from '@angular/router';
-import {ListComponent} from './app/components/list/list';
+import {ListComponent} from './components/list/list';
+import {DetailComponent} from './components/detail/detail';
 
 const appRoutes: Routes = [
     {
         path: '',
         component: ListComponent,
         pathMatch: 'full'
+    },
+    {
+        path: 'detail/:id',
+        component: DetailComponent
     }
 ];
 
